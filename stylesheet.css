@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-family: "Sansita";
+    background-color: #ebebeb;
+  }
+
+  /* header */
+  header {
+    height: 65px;
+    width: 100%;
+    background-color:rgba(46, 46, 46, 0.9);
+  }
+  
+  .logo {
+    width: 107px;
+  }
+
+  .header-left {
+    float:left;
+    margin: 0.5% 0.5% 0.5% 2%;
+  }
+  
+  .header-right {
+    float:right;
+    margin: 0.5% 0.5% 0.5% 2%;
+  }
+
+  .header-right li {
+    font-size: 107%;
+    list-style: none;
+    float: left;
+    color: #dedede;
+    padding-bottom:33px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  /* div top wrapper */
+
+  .container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .top-wrapper {
+    padding: 180px 0px 100px 0px;
+    color: white;
+    background-image:url(header.png);
+    background-size:cover;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .top-wrapper h1 {
+    font-size: 75px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+
+  .top-wrapper p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 45px;
+  }
+
+  .heading {
+    margin: 2% 0% 1% 4%;
+    font-size: 48px;
+  }
+
+/* div pendaftaran wrapper */
+  .pendaftaran-wrappaper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .pendaftaran-wrappaper table {
+    background-color:white;
+    border-radius: 2%;
+    margin-top: 7px;
+    font-size: 29px;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%)
+  }
+
+  th.pendaftaran {
+    font-size: 100%;
+    width: 25%;
+    text-align: left;
+    padding-left: 3%;
+  }
+
+  td.pendaftaran {
+    border: 1 solid black;
+    padding: 1% 1% 1% 1%;
+    font-size: 90%;
+    margin: auto;
+    width: 70%;
+  }
+
+  input[type=text].input-daftar, input[type=number].input-daftar, input[type=date].input-daftar {
+    font-family: "Sansita";
+    border: 1 solid black / 1 solid black ;
+    width: 98%;
+    font-size: 90%;
+    margin:1% 1%;
+    padding: 1% 1% 1% 1%;
+    box-sizing: border-box
+  }
+
+  select#tenda {
+    float: left;
+    font-family: "Sansita";
+    font-size: 1em;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1% auto;
+    width: 60%;
+    height: 60px;
+    margin:1% 1%;
+    cursor: pointer;
+  }
+
+  input[type=submit]#submit-daftar {
+    font-family: "Sansita";
+    background-color: #707070;
+    color:white;
+    font-size: 80%;
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1%;
+    cursor: pointer;
+    width: 20%;
+    float: right;
+    border-radius: 7px;
+    box-shadow:none;
+  }
+
+  input[type=submit]#submit-daftar:hover {
+    background-color:#e8e8e8;
+    color: black;
+    border: none;
+  }
+  input[type=submit]#submit-daftar:active {
+    position:relative;
+    top: 7px;
+    box-shadow:none;
+  }
+
+  /* fasilitas */
+
+  .heading h2 {
+    font-weight: normal;
+    margin-block-end: 0%;
+  }
+
+  .fasilitas-wrapper {
+    height: 500px;
+    left: 50%;
+  }
+
+  .fasilitas {
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .fasilitas-space {
+    margin-left: 3%;
+  }
+  
+
+  .fasilitas-icon img {
+    width: 269px;
+    height: 349px;
+    border-radius: 10%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding:20px;
+  }
+
+  .fasilitas-icon p {
+    position:absolute;
+    bottom: 2%;
+    width:100%;
+    font-size: 1.5em;
+    color:black;
+  }
+
+  .txt-contents {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* tarif */
+
+  .tarif-wrapper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  table.tarif {
+    text-align: left;
+    font-size: 36px;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .underhead {
+    text-align: center;
+    border-bottom: 4px solid black ;
+  }
+
+  td.tarifjenis, th.underhead2 {
+    padding-left: 2%;
+  }
+
+  .head-tarif2, .reguler {
+    background-color: #d1d1d1; 
+  }
+
+  .vip, .dome, .underhead {
+    background-color: white; 
+  }
+
+  /* syarat dan ketentuan */
+  .syaratketentuan-wrapper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  table.syaratketentuan {
+    background-color: white;
+    border-radius: 2%;
+    font-size: 36px;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  th.syaratketentuan {
+    border-bottom: 4px solid black ;
+  }
+  
