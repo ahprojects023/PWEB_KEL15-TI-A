@@ -325,6 +325,7 @@ body {
   
   input[type=submit]#s-k {
     width: 29%;
+    height: 20px;
     margin-right: -3%;
     box-shadow: none;
     cursor: pointer;
