@@ -6,21 +6,28 @@
     <title>DeLoano_Glamping</title>
     <link rel="icon" href="bahan/logo.png" type="image">
     <link rel="stylesheet" href="stylesheet.css">
+    <SCript src="pendaftaran.js"></SCript>
 </head>
 <body>
-    <header>
-        <div class='header-left'>
-            <img class='logo' src="bahan/logo.png" alt="" />
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="" class="logo">
         </div>
-        <div class="header-right">
-            <ul>
-              <li><a href="#Bagian 1" style="text-decoration: none;color: white;">Pendaftaran</a></li>
-              <li><a href="#Bagian 2" style="text-decoration: none;color: white;">Fasilitas</a></li>
-              <li><a href="#Bagian 3" style="text-decoration: none;color: white;">Tarif</a></li>
-              <li><a href="#Bagian 4" style="text-decoration: none;color: white;">S&K</a></li>
+        <div class="menu">
+            <ul id="link" class="dropdown-content">
+                <li><a href="#Bagian 1">Pendaftaran</a></li>
+                <li><a href="#Bagian 2">Fasilitas</a></li>
+                <li><a href="#Bagian 3">Tarif</a></li>
+                <li><a href="#Bagian 4">S&K</a></li>
             </ul>
+            <a href="javascript:void(0);" class="menu-toggle" onclick="myFunction()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-    </header>
+    </nav>
+    
     <div class='top-wrapper'>
         <div class='container'>
             <h1>DELOANO_GLAMPING.</h1>
@@ -72,64 +79,37 @@
             </tbody>
         </table>
     </div>
-    <div class='fasilitas-wrapper'>
-        <div class='fasilitas-container'>
-            <div class="heading">
-                <h2 id="Bagian 2">Fasilitas</h2>
-            </div>
-            <div class='fasilitas-space'>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas1.png" alt="" />
-                        <p class='txt-contents'>Kemah Anti Ribet</p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas2.png" alt="" />
-                        <p class='txt-contents'> Amenities </p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas3.png" alt="" />
-                        <p class='txt-contents'>Mushola </p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas4.png" alt="" />
-                        <p class='txt-contents'>Free WiFi</p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas5.png" alt="" />
-                        <p class='txt-contents'>Makan </p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas6.png" alt="" />
-                        <p class='txt-contents'>Kebun Teh</p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas7.png" alt="" />
-                        <p class='txt-contents'>Air Panas </p>
-                    </div>
-                </div>
-                <div class='fasilitas'>
-                    <div class='fasilitas-icon'>
-                        <img src="bahan/fasilitas/fasilitas8.png" alt="" />
-                        <p class='txt-contents'>Toilet</p>
-                    </div>
-                </div>
-            </div>
-          </div>
+    
+        <div class="judul">
+        <h2 id="Bagian 2">Fasilitas</h2>
+    </div>
+    <div class="fasilitas-container">
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas1.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas2.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas3.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas4.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas5.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas6.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas7.png" alt="">
+        </div>
+        <div class="fasilitas">
+            <img src="bahan/fasilitas/fasilitas8.png" alt="">
         </div>
     </div>
+    
     <div class="tarif-wrapper">
         <div class="heading"><h2 id="Bagian 3">Tarif</h2></div>
         <table cellpadding = 7 cellspacing = 0 class="tarif">
@@ -158,62 +138,58 @@
             </tbody>
         </table>
     </div>
-    <div class="syaratketentuan-wrapper">
-        <div class="heading">
-            <h2 id="Bagian 4">Syarat & Ketentuan</h2>
-        </div>
-        <table cellpadding = 7 cellspacing = 18 class="syaratketentuan">
-            <tbody>
-                <tr><th class="syaratketentuan">Syarat dan Ketentuan</th></tr>
-                <tr><td class="syaratketentuan"><ol>
-                    <li>Pastikan diri dalam kondisi sehat sebelum pergi</li>
-                    <li>Jika mengalami gejala sakit, tetap di rumah dan periksakan diri ke rumah sakit </li>
-                    <li>Selalu gunakan masker, selama di tempat wisata</li>
-                    <li>Sering cuci tangan pakai sabun yang disediakan di tempat wisata atau menggunakan handsanitizer milik sendiri</li>
-                    <li>Hindari menyentuh area wajah,seperti mata, hidung dan mulut jika perlu bawa face shield dari rumah</li>
-                    <li>Tetap terapkan social distancing dengan jarak minimal 1 meter</li>
-                    <li>Saat sudah sampai rumah segera ganti pakaian sebelum kontak dengan keluarga</li>
-                    <li>Bersihkan semua peralatan seperti handphone, kacamata, tas dan barang lainnya dengan cairan disinfektan</li>
-                </ol></td></tr>
-            </tbody>
-        </table>
+    
+    <div class="judul">
+        <h2 id="Bagian 4">Syarat dan Ketentuan</h2>
     </div>
+    <div class="syarat">
+        <h3>Syarat dan Ketentuan</h3>
+        <div class="syarat-space">
+            <ol>
+                <li>Pastikan diri dalam kondisi sehat sebelum pergi</li>
+                <li>Jika mengalami gejala sakit, tetap di rumah dan periksakan diri ke rumah sakit </li>
+                <li>Selalu gunakan masker, selama di tempat wisata</li>
+                <li>Sering cuci tangan pakai sabun yang disediakan di tempat wisata atau menggunakan handsanitizer milik sendiri</li>
+                <li>Hindari menyentuh area wajah,seperti mata, hidung dan mulut jika perlu bawa face shield dari rumah</li>
+                <li>Tetap terapkan social distancing dengan jarak minimal 1 meter</li>
+                <li>Saat sudah sampai rumah segera ganti pakaian sebelum kontak dengan keluarga</li>
+                <li>Bersihkan semua peralatan seperti handphone, kacamata, tas dan barang lainnya dengan cairan disinfektan</li>
+            </ol>
+        </div>
+    </div>
+    
     <footer>
-      <div class="footer-center">
-            <img src="/bahan/logo.png" alt="">
-            <a href="https://goo.gl/maps/jxgEvnavqrbjDvPZ8" style="color: #FFFF;text-decoration: none;" target="_blank">
-                <p class="alamat">Pangkuan Sedayu, Desa, Sibebek, Sedayu, Kec. Loano,</p>
-                <p class="alamat">Kabupaten Purworejo, Jawa Tengah</p>
-            </a>
-            <h2 id="f-center">FOLLOW US</h2>
-            <div class="sosmed">
-                <a href="https://web.facebook.com/glampingdeloano" target="_blank"><img src="/bahan/sosmed/fb.png" alt="" id='sosmed'>
-                <a href="https://www.instagram.com/deloano_glamping" target="_blank"><img src="/bahan/sosmed/ig.png" alt="" id='sosmed'>
-                <a href="https://twitter.com/deloanoglamping" target="_blank"><img src="/bahan/sosmed/twitter.png" alt="" id='sosmed'>
-                <a href="https://www.youtube.com/channel/UCFuUSADoBNW5WNItl1q283A" target="_blank"><img src="/bahan/sosmed/yt.png" alt="" id='sosmed'>
-                <a href="#"></a>
+        <div class="container">
+            <div class="left">
+                <div><a href="#Bagian 1">Pendaftaran</a></div>
+                <div><a href="#Bagian 2">Fasilitas</a></div>
+                <div><a href="#Bagian 3">Tarif</a></div>
+                <div><a href="#Bagian 4">S&K</a></div>
             </div>
-        </div>
-        <div class="footer-right">
-            <form action="">
-                <table border="0" style="color: #ffff;font-family: 'Sansita';padding-top: 4%;padding-right: 5%;" >
-                    <tr><td style="width: 94%;font-size: 1.8em;">HUBUNGI KAMI</td></tr>
-                    <tr><td style="font-size: 1.5em;border-bottom: 4px solid white;">0811-2654-595</td></tr>
-                    <tr><td style="font-size: 1em;">Kami ingin mendengar lebih dari anda</td></tr>
-                    <tr><td><input type="text" placeholder="email" id='email' style="width:99%; height: 25px;font-size: 1em;"></td></tr>
-                    <tr><td><textarea id="kritiksaran" name="kritiksaran" placeholder="kritik dan saran" rows="5" cols="30" style="width:100%;font-size: 1em;font-family: 'Sansita';"></textarea></td></tr>
-                    <tr><td><input type="submit" value="Kirim" id='s-k' style="float: right;font-family: 'Sansita';"></td></tr>
-                </table>
-            </form>
-        </div>
-
-        <div class="footer-left">
-            <ul id="footer-left">
-                <li id='f-tautan'><a href="#Bagian 1" style="text-decoration: none;color: white;">Pendaftaran</a></li>
-                <li id='f-tautan'><a href="#Bagian 2" style="text-decoration: none;color: white;">Fasilitas</a></li>
-                <li id='f-tautan'><a href="#Bagian 3" style="text-decoration: none;color: white;">Tarif</a></li>
-                <li id='f-tautan'><a href="#Bagian 4" style="text-decoration: none;color: white;">S&K</a></li>
-            </ul>
+            <div class="center">
+                <img src="logo.png" alt="" width="100px" class="footer">
+                <a href="https://goo.gl/maps/jxgEvnavqrbjDvPZ8" style="color: #FFFF;text-decoration: none;" target="_blank">
+                    <p class="alamat">Pangkuan Sedayu, Desa, Sibebek, Sedayu, Kec. Loano,</p>
+                    <p class="alamat">Kabupaten Purworejo, Jawa Tengah</p>
+                </a>
+                <h4>Follow Us</h4>
+                <div class="socmed">
+                    <a href="https://web.facebook.com/glampingdeloano" target="_blank"><img src="sosmed/fb.png" alt="" id='sosmed'>
+                    <a href="https://www.instagram.com/deloano_glamping" target="_blank"><img src="sosmed/ig.png" alt="" id='sosmed'>
+                    <a href="https://twitter.com/deloanoglamping" target="_blank"><img src="sosmed/twitter.png" alt="" id='sosmed'>
+                    <a href="https://www.youtube.com/channel/UCFuUSADoBNW5WNItl1q283A" target="_blank"><img src="sosmed/yt.png" alt="" id='sosmed'>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="right">
+                <div>HUBUNGI KAMI</div>
+                <div>0811-2654-595</div>
+                <hr>
+                <div>Kami ingin mendengar lebih dari anda</div>
+                <input type="text" placeholder="email" id='email' style="width:99%; height: 25px;font-size: 1em;" onfocus="this.value=''">
+                <textarea id="kritiksaran" name="kritiksaran" placeholder="kritik dan saran" rows="5" cols="30" style="width:100%;font-size: 1em;font-family: 'Sansita';" onfocus="this.value=''"></textarea>
+                <input type="submit" onclick="kesanpesan()" value="Kirim" id='s-k' style="float: right;font-family: 'Sansita'; ">
+            </div>
         </div>
     </footer>
 </body>
