@@ -28,56 +28,52 @@
         </div>
     </nav>
     
-    <div class='top-wrapper'>
+        <div class='top-wrapper'>
         <div class='container'>
             <h1>DELOANO_GLAMPING.</h1>
             <p>Wisata Alam Milenial Dengan Berbagai Fasilitas</p>
             <p>Sensasi Camping Mewah di Perbukitan Menoreh.</p>
-          </div>
-    </div>
-    <div class="pendaftaran-wrappaper">
-        <div class="heading">
-            <h2 id="Bagian 1">Pendaftaran</h2>
         </div>
-        <table cellpadding='4' cellspacing='0' class="pendaftaran">
-            <tbody class="form-pendaftaran">
-                <form action="" class="space-form">
-                    <tr><th class="pendaftaran"><label for="nama">Nama</label></th>
-                        <td class="pendaftaran"><input type="text" class="input-daftar" placeholder="masukkan nama" required='required'></td>
-                    </tr>
-                    <tr>
-                        <th class="pendaftaran"><label for="jumlah">Jumlah Anggota</label></th>
-                        <td class="pendaftaran"><input type="number" class="input-daftar" placeholder="masukkan banyak orang" required='required'></td>
-                    </tr>
-                    <tr>
-                        <th class="pendaftaran"><label for="whatsapp">No Whatsapp</label></th>
-                        <td class="pendaftaran"><input type="number" class="input-daftar" placeholder="masukkan no whatsapp" required='required'></td>
-                    </tr>
-                    <tr>
-                        <th class="pendaftaran"><label for="checkin">Check In</label></th>
-                        <td class="pendaftaran"><input type="date" class="input-daftar" required='required'></td>
-                    </tr>
-                    <tr>
-                        <th class="pendaftaran"><label for="checkout">Check Out</label></th>
-                        <td class="pendaftaran"><input type="date" class="input-daftar" required='required'></td>
-                    </tr>
-                    <tr>
-                        <th class="pendaftaran">Jenis Tenda</th>
-                        <td class="pendaftaran">
-                            <select name="tenda" id="tenda" required='required'>
-                                <option value="0" selected>- Pilih Tipe Tenda -</option>
-                                <option value="1">VIP ( Sedayu Room )</option>
-                                <option value="2">Reguler ( deLoano Room )</option>
-                                <option value="3">Dome Besar</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" id="submit-daftar" value="Kirim"></td>
-                    </tr>
-                </form>
-            </tbody>
-        </table>
+    </div>
+    <div class="judul">
+        <h2 id="Bagian 1">Pendaftaran</h2>
+    </div>
+    <div class="pendaftaran">
+        <form action="js.html" name="pendaftaran" method="post" class="space-form"></form>
+            <div class="daftar">
+                <label for="nama" class="daftar-label">Nama</label>
+                <input type="text" class="input-daftar" placeholder="Masukkan Nama" required='required' onfocus="this.value=''">
+            </div>
+            <div class="daftar">
+                <label for="jumlah" class="daftar-label">Jumlah Anggota</label>
+                <input type="number" class="input-daftar" placeholder="Masukkan Jumlah Anggota" required='required' onfocus="this.value=''">
+            </div>
+            <div class="daftar">
+                <label for="whatsapp" class="daftar-label">No Whatsapp</label>
+                <input type="number" class="input-daftar" placeholder="Masukkan No Whatsapp" required='required' onfocus="this.value=''">
+            </div>
+            <div class="daftar">
+                <label for="checkin" class="daftar-label">Check In</label>
+                <input type="date" class="input-daftar" required='required' onfocus="this.value=''">
+            </div>
+            <div class="daftar">
+                <label for="checkout" class="daftar-label">Check Out</label>
+                <input type="date" class="input-daftar" required='required' onfocus="this.value=''">
+            </div>
+            <div class="daftar">
+                <label for="jenisTenda" class="daftar-label">Jenis Tenda</label>
+                <select name="tenda" id="tenda" required='required' onfocus="this.value='- Pilih Tipe Tenda -'">
+                    <option value="0" selected>- Pilih Tipe Tenda -</option>
+                    <option value="1">VIP ( Sedayu Room )</option>
+                    <option value="2">Reguler ( deLoano Room )</option>
+                    <option value="3">Dome Besar</option>
+                </select>
+            </div>
+            <div class="daftar">
+                <td></td>
+                <input type="button" onclick="Pendaftaran()"  id="submit-daftar" value="kirim">
+            </div>
+        </form>  
     </div>
     
         <div class="judul">
@@ -110,33 +106,57 @@
         </div>
     </div>
     
-    <div class="tarif-wrapper">
-        <div class="heading"><h2 id="Bagian 3">Tarif</h2></div>
-        <table cellpadding = 7 cellspacing = 0 class="tarif">
-            <tbody>
-                <tr><th colspan="3" class="underhead">Jenis Tenda dan Tarif</th></tr>
-                <tr class="head-tarif2">
-                    <th class="underhead2">Jenis Tenda</th>
-                    <th class="underhead2">Kapasitas</th>
-                    <th class="underhead2">Tarif</th>
-                </tr>
-                <tr class="vip">
-                    <td class="tarifjenis">VIP (Sedayu Room )</td>
-                    <td class="tarifjenis">Maksimal 2 Orang</td>
-                    <td class="tarifjenis">Rp.350.000/Orang</td>
-                </tr>
-                <tr class="reguler">
-                    <td class="tarifjenis">Reguler ( deLoano Room )</td>
-                    <td class="tarifjenis">Maksimal 6 Orang</td>
-                    <td class="tarifjenis">Rp.180.000/Orang</td>
-                </tr>
-                <tr class="dome">
-                    <td class="tarifjenis">Dome Besar</td>
-                    <td class="tarifjenis">Maksimal 8 Orang</td>
-                    <td class="tarifjenis">Rp.150.000/Orang</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="judul">
+        <h2 id="Bagian 3">Tarif</h2>
+    </div>
+    <div class="tenda">
+        <div class="head">
+            <h3 style="margin-block: 0em;">Jenis Tenda dan Tarif</h3>
+        </div>
+        <div class="tarif-space">
+            <div class="jenis-tenda">
+                <h4>Jenis Tenda</h4>
+                <ul>
+                    <li>
+                        <p>VIP (Sedayu Room )</p>
+                    </li>
+                    <li>
+                        <p>Reguler ( deLoano Room )</p>
+                    </li>
+                    <li>
+                        <p>Dome Besar</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="kapasitas">
+                <h4>kapasitas</h4>
+                <ul>
+                    <li>
+                        <p>Maksimal 2 Orang</p>
+                    </li>
+                    <li>
+                        <p>Maksimal 6 Orang</p>
+                    </li>
+                    <li>
+                        <p>Maksimal 8 Orang</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tarif">
+                <h4>Tarif</h4>
+                <ul>
+                    <li>
+                        <p>Rp.350.000/Orang</p>
+                    </li>
+                    <li>
+                        <p>Rp.350.000/Orang</p>
+                    </li>
+                    <li>
+                        <p>Rp.350.000/Orang</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     
     <div class="judul">
