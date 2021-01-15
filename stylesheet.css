@@ -129,117 +129,134 @@ nav ul li a:hover {
 }
 
 /* div top wrapper */
-.container {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto; 
-    margin-right: auto;
-  }
-
-  .top-wrapper {
-    padding: 180px 0px 100px 0px;
+.top-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 200px 0px 100px 0px;
+    height: inherit;
     color: white;
     background-image:url("bahan/header.png");
     background-size:cover;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+}
 
-  .top-wrapper h1 {
+.top-wrapper h1 {
     font-size: 75px;
     letter-spacing: 5px;
     margin-bottom: 5px;
-  }
+}
 
-  .top-wrapper p {
+.top-wrapper p {
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-size: 45px;
-  }
+}
 
-  .heading {
-    margin: 2% 0% 1% 4%;
-    font-size: 48px;
-  }
+/*responsive */
+@media screen and (max-width: 768px) {
+    .top-wrapper {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .top-wrapper h1 {
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .top-wrapper p {
+        margin-block-start: 0em;
+        margin-block-end: 0.2em;
+        font-size: 16px;
+    }
+}
 
 /* pendaftaran */
-.pendaftaran-wrappaper {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
-  .pendaftaran-wrappaper table {
-    background-color:white;
-    border-radius: 2%;
-    margin-top: 7px;
-    font-size: 29px;
+.pendaftaran {
     width: 90%;
-    margin-left: 50%;
-    transform: translateX(-50%)
-  }
-
-  th.pendaftaran {
-    font-size: 100%;
-    width: 25%;
-    text-align: left;
-    padding-left: 3%;
-  }
-
-  td.pendaftaran {
-    padding: 1% 1% 1% 1%;
-    font-size: 90%;
-    margin: auto;
-    width: 70%;
-  }
-
-  input[type=text].input-daftar, input[type=number].input-daftar, input[type=date].input-daftar {
-    font-family: "Sansita";
     border: 2px solid #707070;
-    width: 98%;
-    font-size: 90%;
-    margin:1% 1%;
-    padding: 1% 1% 1% 1%;
-    box-sizing: border-box
-  }
+    background-color: white;
+    border-radius: 2%;
+    margin: 30px auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
 
-  select#tenda {
-    float: left;
-    border: 2px solid #707070;
-    font-family: "Sansita";
-    font-size: 1em;
-    padding: 1% 1% 1% 1%;
-    margin: 1% 1% auto;
-    width: 60%;
-    height: 60px;
-    margin:1% 1%;
-    cursor: pointer;
-  }
+.daftar {
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 
-  input[type=submit]#submit-daftar {
+.daftar-label {
+    width: 600px;
+    font-size: 45px;
+}
+
+input.input-daftar, select#tenda {
+    width: 100%;
+    font-size: 29px;
+}
+
+input#submit-daftar {
     font-family: "Sansita";
     background-color: #707070;
     color:white;
-    font-size: 80%;
-    padding: 1% 1% 1% 1%;
-    margin: 1% 1%;
-    cursor: pointer;
     width: 20%;
+    font-size: 200%;
+    cursor: pointer;
     float: right;
     border-radius: 7px;
     box-shadow:none;
-  }
+    margin-left: 92%;
+}
 
-  input[type=submit]#submit-daftar:hover {
-    background-color:#e8e8e8;
-    color: black;
-    border: none;
-  }
-  input[type=submit]#submit-daftar:active {
-    position:relative;
-    top: 7px;
-    box-shadow:none;
-  }
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .daftar {
+        width: 95%;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-height: 700px;
+        margin: 10px auto;
+    }
 
+    input.input-daftar {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    select#tenda {
+        width: 60.5%;
+        font-size: 15px;
+    }
+
+    .daftar-label {
+        width: 30%;
+        font-size: 25px;
+    }
+
+    input[type="submit"] {
+        right: 0px;
+    }
+
+    input#submit-daftar {
+        width: 100px;
+        font-size: 120%;
+        float: right;
+        border-radius: 4px;
+        margin-left: 85%;
+    }
+}
 /* Fasilitas */
 .fasilitas-container {
     width: 90%;
@@ -289,34 +306,69 @@ nav ul li a:hover {
 }
 
 /* tenda */
-.tarif-wrapper {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
-  table.tarif {
-    text-align: left;
-    font-size: 36px;
+.tenda {
     width: 90%;
-    margin-left: 50%;
-    transform: translateX(-50%)
-  }
-
-  .underhead {
+    background-color: white;
+    height: inherit;
+    /* border: 5px solid #333; */
+    margin: 30px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 36px;
     text-align: center;
-    border-bottom: 4px solid black ;
-  }
+    margin-block-end: 0em;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
 
-  td.tarifjenis, th.underhead2 {
-    padding-left: 2%;
-  }
+.tarif-space {
+    width: 100%;
+    text-align: left;
+    border-top: 5px solid #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
-  .head-tarif2, .reguler {
-    background-color: #d1d1d1; 
-  }
+div.tarif-space ul {
+    padding: 0;
+    list-style:none;
+}
 
-  .vip, .dome, .underhead {
-    background-color: white; 
-  }
+div.tarif-space ul li p {
+    margin-block-end: 1em;
+    margin-block-start: 0em;
+}
+
+div.tarif-space h4 {
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+}
+
+#warna1 {
+    background-color: #EAEAEA;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .tenda {
+        margin: 30px auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        margin-block-end: 0em;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+    .tarif-space {
+        border-top: 3px solid #333;
+        width: 98%;
+        margin: 0 1%;
+    }
+}
 
 /* syarat dan ketentuan */
 .syarat {
